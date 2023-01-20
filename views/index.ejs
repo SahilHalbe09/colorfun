@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Random Color Generator</title>
+
+		<!-- styles -->
+		<link rel="stylesheet" href="/css/styles.css" />
+	</head>
+	<body style="background-color: <%= textColor %>">
+		<nav>
+			<div class="nav-center">
+				<ul class="nav-links">
+					<li><a href="/">random</a></li>
+					<li><a href="/hex">hex</a></li>
+					<li><a href="/rgba">Rgba</a></li>
+					<li><a href="/color">Plain</a></li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<div class="container">
+				<h2>background color : <span class="color"><%= textColor %></span></h2>
+				<button class="btn btn-hero" id="btn" onclick="reload()">Generate new</button>
+			</div>
+		</main>
+
+		<!-- script -->
+		<script src="/JS/index.js"></script>
+
+		<!-- Internal Script -->
+		<script>
+			const reload = () => {
+				window.location.reload();
+			};
+		</script>
+	</body>
+</html>
