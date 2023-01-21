@@ -23,7 +23,7 @@ This project is a simple web application that generates random color values of d
 - Clone the project
 
 ```bash
-  git clone https://github.com/yourusername/random-color-generator.git
+  git clone https://github.com/SahilHalbe09/color-fun.git
 ```
 
 - Go to the project directory
